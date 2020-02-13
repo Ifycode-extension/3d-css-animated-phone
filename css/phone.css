@@ -1,0 +1,347 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+html, body {
+    height: 100vh;
+    background: rgb(40, 88, 128);
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+}
+
+.scene {
+    -webkit-perspective: 1500px;
+            perspective: 1500px; 
+    -webkit-perspective-origin: 50% 50%; 
+            perspective-origin: 50% 50%;
+    width: 260px;
+    height: 450px;
+}
+
+.phone {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 230px;
+    height: 400px;
+    -webkit-transform: rotateY(-60deg);
+            transform: rotateY(-60deg);
+    /*border: 1px solid green;*/
+    -webkit-animation: animate 20s infinite;
+            animation: animate 20s infinite;
+}
+
+.face {
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+  
+}
+
+.front, .back {
+    width: 230px;
+    height: 400px; 
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+.front {
+    -webkit-box-shadow: 1px 0px 5px inset rgb(192, 192, 192, 0.1), -1px -1px 5px inset rgb(192, 192, 192, 0.1);
+            box-shadow: 1px 0px 5px inset rgb(192, 192, 192, 0.1), -1px -1px 5px inset rgb(192, 192, 192, 0.1);
+    
+   
+}
+
+ .back {
+    border: 0;
+    -webkit-box-shadow: 1px 0px 5px inset rgb(192, 192, 192, 0.1), -1px -1px 5px inset rgb(192, 192, 192, 0.1);
+            box-shadow: 1px 0px 5px inset rgb(192, 192, 192, 0.1), -1px -1px 5px inset rgb(192, 192, 192, 0.1); 
+}
+
+
+.frontBack {
+    -webkit-transform: translateZ(9.5px);
+            transform: translateZ(9.5px);
+    background: black;
+    width: 230px;
+    height: 400px; 
+}
+
+.inFront {
+    background: url(../img/Penguins.jpg) 50% 70%/ cover no-repeat;
+    width: 96%;
+    height: 95%;
+    border-radius: 15px;
+    margin-top: 8px;
+    -webkit-animation: bg 50s 12s infinite;
+            animation: bg 50s 12s infinite;
+}
+
+.inFront::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: black;
+    border-radius: 50%;
+    margin-left: 41%;
+    top: -7px;
+}
+
+.inFront::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(192, 192, 192, 0.15);
+    border-radius: 50%;
+    margin-left: 46.5%;
+    top: 9px;
+}
+
+.inBack {
+    width: 30px;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 12px;
+    -webkit-box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+            box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+}
+
+.inBack::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: rgb(192, 192, 192, 0.15);
+    border-radius: 50%;
+    top: 22px;
+    left: 46%;
+    -webkit-box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+            box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+}
+
+.inBack::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(192, 192, 192, 0.15);
+    border-radius: 50%;
+    top: 49px;
+    left: 47%;
+    -webkit-box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+            box-shadow: 1px 1px 5px inset rgb(192, 192, 192, 0.2), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+
+
+}
+
+.right, .left {
+    width: 20px;
+    height: 400px;
+   /* background: rgb(255, 255, 0, 0.7);*/
+    left: 105px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.right {
+    left: 105px;
+}
+
+.inRight, .inLeft {
+    width: 20px;
+    height: 370px;
+    background: black;
+    
+}
+
+.inRight::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 60px;
+    border-radius: 10px;
+    top: 40px;
+    left: 5px;
+    -webkit-box-shadow: 1px 1px 5px inset rgb(255, 215, 0, 0.5), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+            box-shadow: 1px 1px 5px inset rgb(255, 215, 0, 0.5), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+}
+
+.inRight::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 40px;
+    border-radius: 10px;
+    top: 120px;
+    left: 5px;
+    -webkit-box-shadow: 1px 1px 5px inset rgb(40, 88, 128), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+            box-shadow: 1px 1px 5px inset rgb(40, 88, 128), -1px -1px 5px inset rgb(192, 192, 192, 0.2);
+
+
+}
+
+.top, .bottom {
+    /*margin-left: auto;
+    margin-right: auto;*/
+    width: 230px;
+    height: 20px;
+    /*background: rgb(255, 0, 0, 0.7);*/
+    top: 189px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+}
+
+
+.top {
+    top: 191px;
+}
+
+.inTop, .inBottom {
+    width: 200px;
+    height: 20px;
+    background: black;
+
+}
+
+.front {
+    -webkit-transform: rotateY(0deg) translateZ(10px);
+            transform: rotateY(0deg) translateZ(10px);
+}
+
+.back {
+    -webkit-transform: rotateY(180deg) translateZ(10px);
+            transform: rotateY(180deg) translateZ(10px);
+}
+
+.right {
+    -webkit-transform: rotateY(90deg) translateZ(115px);
+            transform: rotateY(90deg) translateZ(115px);
+}
+
+.left {
+    -webkit-transform: rotateY(-90deg) translateZ(115px);
+            transform: rotateY(-90deg) translateZ(115px);
+}
+
+.top {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+            transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(200px);
+            transform: rotateX(-90deg) translateZ(200px);
+}
+
+@-webkit-keyframes animate {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg); 
+    }
+
+    100%{
+        -webkit-transform: rotateY(-360deg);
+                transform: rotateY(-360deg); 
+    }
+}
+
+@keyframes animate {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg); 
+    }
+
+    100%{
+        -webkit-transform: rotateY(-360deg);
+                transform: rotateY(-360deg); 
+    }
+}
+
+
+@-webkit-keyframes bg {
+
+    25% {
+        background: url(../img/Jellyfish.jpg) 0 0/ cover no-repeat;
+       
+    }
+
+    50% {
+        background: url(../img/Jellyfish.jpg) 0 0/ cover no-repeat;
+       
+    }
+
+    70% {
+        background: url(../img/Tulips.jpg) 0 0/ cover no-repeat;
+    }
+
+    90% {
+        background: url(../img/Tulips.jpg) 0 0/ cover no-repeat;
+    }
+
+ 
+}
+
+
+@keyframes bg {
+
+    25% {
+        background: url(../img/Jellyfish.jpg) 0 0/ cover no-repeat;
+       
+    }
+
+    50% {
+        background: url(../img/Jellyfish.jpg) 0 0/ cover no-repeat;
+       
+    }
+
+    70% {
+        background: url(../img/Tulips.jpg) 0 0/ cover no-repeat;
+    }
+
+    90% {
+        background: url(../img/Tulips.jpg) 0 0/ cover no-repeat;
+    }
+
+ 
+}
+
+
+p {
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    opacity: 0.4;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 40%;
+
+}
