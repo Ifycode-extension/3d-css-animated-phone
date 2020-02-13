@@ -1,4 +1,4 @@
-# 3d-css-animated-phone
+# 3d Css Animated Phone Project
 Mobile phone created with pure css to practice css 3d animation. No javascript! 
 Animation. 3d.
 
